@@ -955,7 +955,7 @@ version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cda9fa8fbe71e6c34b9874bf98905916436c506cbcd64394c43129be0a238592"
 dependencies = [
- "kiddo",
+ "kiddo 5.3.3",
  "rand 0.9.5",
  "rand_distr",
  "rand_xoshiro",
@@ -2326,6 +2326,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "kiddo"
+version = "6.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "032f79d801e9c4308f7aa16456bdd1b05deb43eb96f07d08c0a4f70db3b393b9"
+dependencies = [
+ "aligned-vec",
+ "array-init",
+ "az",
+ "cmov",
+ "fixed",
+ "generator",
+ "nonmax",
+ "num-traits",
+ "rayon",
+ "sorted-vec",
+ "tracing",
+ "yep-cache-line-size",
+]
+
+[[package]]
 name = "lazy_static"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2629,6 +2649,12 @@ name = "nonempty"
 version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9737e026353e5cd0736f98eddae28665118eb6f6600902a7f50db585621fecb6"
+
+[[package]]
+name = "nonmax"
+version = "0.5.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "610a5acd306ec67f907abe5567859a3c693fb9886eb1f012ab8f2a47bef3db51"
 
 [[package]]
 name = "nu-ansi-term"
@@ -3222,6 +3248,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "raw-cpuid"
+version = "11.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "498cd0dc59d73224351ee52a95fee0f1a617a2eae0e7d9d720cc622c73a54186"
+dependencies = [
+ "bitflags 2.13.1",
+]
+
+[[package]]
 name = "rayon"
 version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3339,7 +3374,7 @@ dependencies = [
  "hmac",
  "iconforge",
  "image",
- "kiddo",
+ "kiddo 6.3.0",
  "md-5",
  "mysql",
  "noise",
@@ -4729,6 +4764,16 @@ name = "writeable"
 version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1ffae5123b2d3fc086436f8834ae3ab053a283cfac8fe0a0b8eaae044768a4c4"
+
+[[package]]
+name = "yep-cache-line-size"
+version = "0.9.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59dea97e5518f64cbb9468f2cd1ac59c9d0186eeb5ee6198d4bb8adfa1465499"
+dependencies = [
+ "libc",
+ "raw-cpuid",
+]
 
 [[package]]
 name = "yoke"
