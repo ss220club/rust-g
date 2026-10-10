@@ -3,14 +3,17 @@
 rust-g (pronounced rusty-g) is a library which offloads certain expensive or
 difficult tasks from BYOND.
 
-This library is currently used in the [/tg/station] codebase, and is required for
-it to run. A pre-compiled DLL version can be found in the repo root of codebases that use it,
-but you can build your own from this repo (and you should if you're running a server).
+This is the [SS220] fork of [tgstation/rust-g](https://github.com/tgstation/rust-g).
+
+It is used across our SS13 builds and is required
+for them to run. A pre-compiled DLL version can be found in the repo root of
+codebases that use it, but you can build your own from this repo (and you should
+if you're running a server).
 
 Builds can also be found on the [releases page] **but should only be used for Windows**,
 as Linux has compatibility issues across distributions.
 
-[releases page]: https://github.com/tgstation/rust-g/releases
+[releases page]: https://github.com/ss220club/rust-g/releases
 
 ## Dependencies
 
@@ -35,7 +38,7 @@ The [Rust] compiler:
 
     ```sh
     # Clone the `rust-g` repository to a directory of your choice
-    git clone https://github.com/tgstation/rust-g.git
+    git clone https://github.com/ss220club/rust-g.git
     # in the `rust-g` directory...
     cd rust-g
     # Linux
@@ -65,7 +68,7 @@ If you want to use the `pc-windows-gnu` or similar other target ABI, do the foll
 
 The [Cargo] tool handles compilation, as well as automatically downloading and
 compiling all Rust dependencies. The default configuration is suitable for
-use with the [/tg/station] codebase. To compile in release mode (recommended for
+use with our builds. To compile in release mode (recommended for
 speed):
 
 Linux:
@@ -206,6 +209,7 @@ If you're still having problems, ask in the [Coderbus Discord]'s
 `#tooling-questions` channel.
 
 [/tg/station]: https://github.com/tgstation/tgstation
+[SS220]: https://github.com/ss220club
 [Rust]: https://rust-lang.org
 [Cargo]: https://doc.rust-lang.org/cargo/
 [rustup]: https://rustup.rs/
@@ -214,6 +218,11 @@ If you're still having problems, ask in the [Coderbus Discord]'s
 
 ## License
 
+
+The license for rust-g itself can be found on tg's repo. Code for the ss220club modifications falls under the same license.
+
+
 This project is licensed under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+
 
 See [LICENSE](./LICENSE) for more details.
